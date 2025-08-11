@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分页+表格</title>
+    <link rel="stylesheet" href="./bootstrap-3.4.1/css/bootstrap.css">
+    <style>
+        .panel-body .item {
+            display: block;
+            padding: 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid clearfix">
+        <div class="col-md-8">
+            <div class="panel panel-success">
+                <div class="panel-heading">最新申请列表</div>
+                <div class="panel-body">
+                    <p>注意！！！！！</p>
+                </div>
+                <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+
+             <ul class="pagination">
+                <li class="disabled">
+                    <a href="#" aria-label="Previous">上一页</a>
+                </li>
+                <li class="active">
+                    <a href="#">1</a>
+                </li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Previous">下一页</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span style="color: red;" class="glyphicon glyphicon-fire" aria-hidden="true"></span> 24小时热门推荐
+                </div>
+                <div class="panel-body">
+                    <a class="item" href="#">ssdsadsadas</a>
+                    <a class="item" href="#">eeeeesadsadas</a>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">24小时热门推荐</div>
+                <div class="panel-body">
+                    <a class="item" href="#">ssdsadsadas</a>
+                    <a class="item" href="#">eeeeesadsadas</a>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">24小时热门推荐</div>
+                <div class="panel-body">
+                    <a class="item" href="#">ssdsadsadas</a>
+                    <a class="item" href="#">eeeeesadsadas</a>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

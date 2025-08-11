@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏</title>
+    <link rel="stylesheet" href="./bootstrap-3.4.1/css/bootstrap.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default" style="border-radius: 0; margin-bottom: 5px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div style="margin: 10px 0; text-align: center;">
+            <a class="btn btn-primary">新建</a>
+            <a class="btn btn-info">批量导入</a>
+            <a class="btn btn-warning">导出</a>
+
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">新建</button>
+                <button type="button" class="btn btn-default">批量导入</button>
+                <button type="button" class="btn btn-default">导出</button>
+            </div>
+
+            <div style="float: right;">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="请输入关键字">
+                    </div>
+
+                    <!-- <button type="submit" class="btn btn-default">搜索</button> -->
+                    <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <a href="https://www.baidu.com">Mark</a>
+                    </td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>
+                        <a href="#" class="btn btn-default btn-xs">编辑</a>
+                        <a href="#" class="btn btn-danger btn-xs">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>
+                        <a href="https://www.baidu.com">Mark</a>
+                    </td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>
+                        <a href="#" class="btn btn-default btn-xs">编辑</a>
+                        <a href="#" class="btn btn-danger btn-xs">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>
+                        <a href="https://www.baidu.com">Mark</a>
+                    </td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>
+                        <a href="#" class="btn btn-default btn-xs">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                        </a>
+                        <a href="#" class="btn btn-danger btn-xs">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./bootstrap-3.4.1/js/bootstrap.js"></script>
+</body>
+
+</html>

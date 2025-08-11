@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="./bootstrap-3.4.1/css/bootstrap.css">
+    <style>
+        .box {
+            width: 400px;
+            min-height: 100px;
+            margin: 100px auto 0 auto;
+            border: 1px solid #dddddd;
+            padding: 0 20px;
+        }
+
+        .box h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>用户登录</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="role">角色</label>
+                <select class="form-control">
+                    <option>普通用户</option>
+                    <option>管理员</option>
+                    <option>浏览用户</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="user">用户名</label>
+                <input type="text" class="form-control" id="user" placeholder="请输入用户名">
+            </div>
+
+            <div class="form-group">
+                <label for="password">密码</label>
+                <input type="password" class="form-control" id="password" placeholder="请输入密码">
+            </div>
+
+            <div class="form-group">
+                <label for="code">验证码</label>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <input type="text" class="form-control" id="code" placeholder="请输入验证码">
+                    </div>
+                    <div class="col-xs-5">
+                        <img src="./images/1.jpg" style="width: 133px; height: 33px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="sms">短信验证码</label>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <input type="text" class="form-control" id="sms" placeholder="请输入短信验证码">
+                    </div>
+                    <div class="col-xs-5">
+                        <input type="button" value="发送验证码" class="btn btn-default btn-block" disabled="disabled">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">登 录</button>
+            <span style="color: red;">用户名或密码错误</span>
+        </form>
+    </div>
+</body>
+</html>
